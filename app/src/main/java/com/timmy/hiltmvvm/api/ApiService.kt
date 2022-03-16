@@ -7,7 +7,7 @@ import retrofit2.http.Query
 interface ApiService {
 
     @Headers("Accept: application/json")
-    @GET("test")
+    @GET("test.json")
     suspend fun getData(@Query("country") countryCode: String = "us"): SampleDataFromAPI
 
 }

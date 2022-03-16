@@ -1,11 +1,11 @@
 package com.timmy.hiltmvvm.viewmodel
 
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel
-import com.timmy.hiltmvvm.viewmodel.SampleRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-
-class SampleViewModel @ViewModelInject constructor(private val sampleRepository: SampleRepository) : ViewModel() {
+@HiltViewModel
+class SampleViewModel @Inject constructor(private val sampleRepository: SampleRepository) : ViewModel() {
 
     fun getData() {
         sampleRepository.init()
