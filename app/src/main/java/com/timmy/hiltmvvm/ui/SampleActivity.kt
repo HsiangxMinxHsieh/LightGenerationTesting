@@ -26,9 +26,9 @@ class SampleActivity : AppCompatActivity() {
         mBinding.vm = viewModel
         initData()
 
-        viewModel.getLiveDataInRealm().observe(this, {
+        viewModel.getLiveDataInRealm().observe(this) {
             Timber.d("結果是=>$it")
-        })
+        }
     }
 
 
