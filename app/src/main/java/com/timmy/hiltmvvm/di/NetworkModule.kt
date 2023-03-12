@@ -29,7 +29,7 @@ class NetworkModule {
     fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
         return Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
-            .baseUrl("https://dl.lig.com.tw/misc/quiz/")
+            .baseUrl("https://data.epa.gov.tw/api/v2/")
             .client(okHttpClient)
             .build()
     }
