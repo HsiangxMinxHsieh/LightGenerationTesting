@@ -15,5 +15,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "HiltMVVM"
+rootProject.name = "LightGenerationTesting"
 include ':app'

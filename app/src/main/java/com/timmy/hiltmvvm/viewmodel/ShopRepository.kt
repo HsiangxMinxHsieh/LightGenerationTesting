@@ -10,7 +10,7 @@ import kotlinx.coroutines.launch
 import retrofit2.Retrofit
 import javax.inject.Inject
 
-class SampleRepository @Inject constructor() {
+class ShopRepository @Inject constructor() {
 
     @Inject
     lateinit var retrofit: Retrofit
@@ -19,7 +19,6 @@ class SampleRepository @Inject constructor() {
     private val apiService by lazy {
         retrofit.create(ApiService::class.java)
     }
-
 
     private val result by lazy { MutableLiveData<SampleDataFromAPI>() }
 
@@ -32,12 +31,6 @@ class SampleRepository @Inject constructor() {
         CoroutineScope(Dispatchers.IO).launch {
             val responseBody = apiService.getData()
             result.postValue(responseBody)
-            MainScope().launch {
-                //處理畫面更新
-//                responseBody.articles.forEach {
-//                }
-
-            }
         }
     }
 
