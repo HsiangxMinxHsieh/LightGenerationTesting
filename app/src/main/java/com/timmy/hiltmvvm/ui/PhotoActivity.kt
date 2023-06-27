@@ -13,7 +13,7 @@ import com.timmy.hiltmvvm.databinding.ActivityPhotoBinding
 import com.timmy.hiltmvvm.databinding.AdapterPhotoBinding
 import com.timmy.hiltmvvm.databinding.AdapterShopAddressBinding
 import com.timmymike.componenttool.BaseActivity
-import com.timmymike.componenttool.BaseAdapter
+import com.timmymike.componenttool.ViewBindingAdapter
 import com.timmymike.logtool.loge
 import com.timmymike.logtool.toDataBean
 import com.timmymike.viewtool.getScreenWidthPixels
@@ -41,7 +41,7 @@ class PhotoActivity : BaseActivity<ActivityPhotoBinding>() {
         val itemCount = 2
         rvPhoto.run {
             layoutManager = GridLayoutManager(this@PhotoActivity, itemCount)
-            adapter = BaseAdapter.create<AdapterPhotoBinding, String>(AdapterPhotoBinding::inflate) {
+            adapter = ViewBindingAdapter.create<AdapterPhotoBinding, String>(AdapterPhotoBinding::inflate) {
                 Glide.with(this@PhotoActivity)
                     .load(it)
                     .centerCrop()

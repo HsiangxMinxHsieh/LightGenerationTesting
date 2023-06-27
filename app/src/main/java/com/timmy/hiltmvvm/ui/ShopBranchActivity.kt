@@ -1,20 +1,17 @@
 package com.timmy.hiltmvvm.ui
 
 import android.content.Intent
-import android.graphics.Color
 import android.os.Bundle
 import com.timmy.hiltmvvm.api.Data
 import com.timmy.hiltmvvm.api.Shop
-import com.timmy.hiltmvvm.databinding.ActivityShopBinding
 import com.timmy.hiltmvvm.databinding.ActivityShopBranchBinding
 import com.timmy.hiltmvvm.databinding.AdapterShopAddressBinding
 import com.timmymike.componenttool.BaseActivity
-import com.timmymike.componenttool.BaseAdapter
+import com.timmymike.componenttool.ViewBindingAdapter
 import com.timmymike.logtool.loge
 import com.timmymike.logtool.toDataBean
 import com.timmymike.logtool.toJson
 import com.timmymike.viewtool.clickWithTrigger
-import com.timmymike.viewtool.setClickTextColorState
 
 
 class ShopBranchActivity : BaseActivity<ActivityShopBranchBinding>() {
@@ -38,7 +35,7 @@ class ShopBranchActivity : BaseActivity<ActivityShopBranchBinding>() {
 
         rvShopBranch.run {
 
-            adapter = BaseAdapter.create<AdapterShopAddressBinding, Shop>(AdapterShopAddressBinding::inflate) {
+            adapter = ViewBindingAdapter.create<AdapterShopAddressBinding, Shop>(AdapterShopAddressBinding::inflate) {
                 val showData = it
                 tvShopName.text = showData.name
                 tvShopAddress.text = showData.address

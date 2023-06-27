@@ -9,7 +9,7 @@ import com.timmy.hiltmvvm.databinding.ActivityShopBinding
 import com.timmy.hiltmvvm.databinding.AdapterShopBinding
 import com.timmy.hiltmvvm.viewmodel.ShopViewModel
 import com.timmymike.componenttool.BaseActivity
-import com.timmymike.componenttool.BaseAdapter
+import com.timmymike.componenttool.ViewBindingAdapter
 import com.timmymike.logtool.*
 import com.timmymike.viewtool.*
 import dagger.hilt.android.AndroidEntryPoint
@@ -33,11 +33,11 @@ class ShopActivity : BaseActivity<ActivityShopBinding>() {
 
     private fun initialRecycleViewByData(dataFromAPI: List<Data>) {
         binding.rvShop.run {
-            adapter = BaseAdapter.create<AdapterShopBinding, Data>(AdapterShopBinding::inflate) {
+            adapter = ViewBindingAdapter.create<AdapterShopBinding, Data>(AdapterShopBinding::inflate) {
                 val showData = it
                 tvShopName.text = showData.shopName
                 tvShopName.run {
-                    setClickTextColorState(Color.BLUE,Color.RED)
+                    setClickTextColorState(Color.LTGRAY,Color.RED)
                 }
                 tvShopName.clickWithTrigger {
                     startActivity(Intent(this@ShopActivity,ShopBranchActivity::class.java).apply{
