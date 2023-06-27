@@ -1,4 +1,4 @@
-package com.timmy.hiltmvvm.di
+package com.timmy.lighttesting.di
 
 import dagger.Module
 import dagger.Provides

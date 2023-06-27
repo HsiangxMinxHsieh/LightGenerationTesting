@@ -1,4 +1,4 @@
-package com.timmy.hiltmvvm.application
+package com.timmy.lighttesting.application
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

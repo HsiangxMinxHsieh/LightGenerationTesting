@@ -1,13 +1,13 @@
-package com.timmy.hiltmvvm.ui
+package com.timmy.lighttesting.ui
 
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import androidx.activity.viewModels
-import com.timmy.hiltmvvm.api.Data
-import com.timmy.hiltmvvm.databinding.ActivityShopBinding
-import com.timmy.hiltmvvm.databinding.AdapterShopBinding
-import com.timmy.hiltmvvm.viewmodel.ShopViewModel
+import com.timmy.lighttesting.api.Data
+import com.timmy.lighttesting.databinding.ActivityShopBinding
+import com.timmy.lighttesting.databinding.AdapterShopBinding
+import com.timmy.lighttesting.viewmodel.ShopViewModel
 import com.timmymike.componenttool.BaseActivity
 import com.timmymike.componenttool.ViewBindingAdapter
 import com.timmymike.logtool.loge

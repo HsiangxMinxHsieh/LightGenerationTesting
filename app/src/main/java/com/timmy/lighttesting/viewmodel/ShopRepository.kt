@@ -1,11 +1,10 @@
-package com.timmy.hiltmvvm.viewmodel
+package com.timmy.lighttesting.viewmodel
 
 import androidx.lifecycle.MutableLiveData
-import com.timmy.hiltmvvm.api.ApiService
-import com.timmy.hiltmvvm.api.SampleDataFromAPI
+import com.timmy.lighttesting.api.ApiService
+import com.timmy.lighttesting.api.SampleDataFromAPI
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch
 import retrofit2.Retrofit
 import javax.inject.Inject

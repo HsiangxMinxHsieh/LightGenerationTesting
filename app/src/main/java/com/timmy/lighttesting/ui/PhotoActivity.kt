@@ -1,12 +1,12 @@
-package com.timmy.hiltmvvm.ui
+package com.timmy.lighttesting.ui
 
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.timmy.hiltmvvm.api.Shop
-import com.timmy.hiltmvvm.databinding.ActivityPhotoBinding
-import com.timmy.hiltmvvm.databinding.AdapterPhotoBinding
+import com.timmy.lighttesting.api.Shop
+import com.timmy.lighttesting.databinding.ActivityPhotoBinding
+import com.timmy.lighttesting.databinding.AdapterPhotoBinding
 import com.timmymike.componenttool.BaseActivity
 import com.timmymike.componenttool.ViewBindingAdapter
 import com.timmymike.logtool.loge

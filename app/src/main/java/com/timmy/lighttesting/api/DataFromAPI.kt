@@ -1,4 +1,4 @@
-package com.timmy.hiltmvvm.api
+package com.timmy.lighttesting.api
 
 import com.google.gson.annotations.SerializedName
 

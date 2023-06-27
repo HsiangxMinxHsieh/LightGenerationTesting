@@ -1,11 +1,11 @@
-package com.timmy.hiltmvvm.ui
+package com.timmy.lighttesting.ui
 
 import android.content.Intent
 import android.os.Bundle
-import com.timmy.hiltmvvm.api.Data
-import com.timmy.hiltmvvm.api.Shop
-import com.timmy.hiltmvvm.databinding.ActivityShopBranchBinding
-import com.timmy.hiltmvvm.databinding.AdapterShopAddressBinding
+import com.timmy.lighttesting.api.Data
+import com.timmy.lighttesting.api.Shop
+import com.timmy.lighttesting.databinding.ActivityShopBranchBinding
+import com.timmy.lighttesting.databinding.AdapterShopAddressBinding
 import com.timmymike.componenttool.BaseActivity
 import com.timmymike.componenttool.ViewBindingAdapter
 import com.timmymike.logtool.loge

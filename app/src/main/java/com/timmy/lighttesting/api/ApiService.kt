@@ -1,4 +1,4 @@
-package com.timmy.hiltmvvm.api
+package com.timmy.lighttesting.api
 
 import retrofit2.http.GET
 import retrofit2.http.Headers
