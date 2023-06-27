@@ -10,8 +10,10 @@ import com.timmy.hiltmvvm.databinding.AdapterShopBinding
 import com.timmy.hiltmvvm.viewmodel.ShopViewModel
 import com.timmymike.componenttool.BaseActivity
 import com.timmymike.componenttool.ViewBindingAdapter
-import com.timmymike.logtool.*
-import com.timmymike.viewtool.*
+import com.timmymike.logtool.loge
+import com.timmymike.logtool.toJson
+import com.timmymike.viewtool.clickWithTrigger
+import com.timmymike.viewtool.setClickTextColorState
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
